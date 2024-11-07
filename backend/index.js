@@ -1,8 +1,10 @@
-const express = require("express");
-const connectDatabase = require("./config/db");
+import express from 'express'
+import connectDatabase from './config/db.js';
+import dotenv from 'dotenv';
+import { User, Educator, Teacher, Student, School, Branch, StudentGroup  } from './models/index.js';
 
 const app = express();
-require("dotenv").config();
+dotenv.config();
 
 const PORT = process.env.APP_PORT;
 

@@ -1,8 +1,8 @@
-import express from 'express'
-import connectDatabase from './config/db.js';
-import dotenv from 'dotenv';
-import cookieParser from 'cookie-parser';
-import authRoutes from './routes/auth.routes.js'
+import express from "express";
+import connectDatabase from "./config/db.js";
+import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
+import authRoutes from "./routes/auth.routes.js";
 
 const app = express();
 dotenv.config();
@@ -16,4 +16,6 @@ app.use("/auth", authRoutes);
 
 connectDatabase();
 
-app.listen(PORT, () => console.log(`server is running on http://localhost:${PORT}`));
+app.listen(PORT, () =>
+  console.log(`server is running on http://localhost:${PORT}`)
+);

@@ -1,11 +1,11 @@
-import mongoose from 'mongoose';
-import User from './User.js';
+import mongoose from "mongoose";
+import User from "./User.js";
 
 const studentSchema = new mongoose.Schema({
-  assignedGroup: { type: mongoose.Schema.Types.ObjectId, ref: 'StudentGroup' },
-  assignedTeacher: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  assignedGroup: { type: mongoose.Schema.Types.ObjectId, ref: "StudentGroup" },
+  assignedTeacher: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
   currentGrade: { type: Number },
-  previousSchool: { type: String }
+  previousSchool: { type: String },
 });
 
-export default User.discriminator('Student', studentSchema);
+export default User.discriminator("Student", studentSchema);

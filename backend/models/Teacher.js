@@ -1,5 +1,5 @@
-import mongoose from 'mongoose';
-import User from './User.js';
+import mongoose from "mongoose";
+import User from "./User.js";
 
 const teacherSchema = new mongoose.Schema({
   subject: { type: String, required: true },
@@ -7,9 +7,9 @@ const teacherSchema = new mongoose.Schema({
   qualifications: {
     degree: { type: String },
     institution: { type: String },
-    graduationYear: { type: Number }
+    graduationYear: { type: Number },
   },
-  certifications: [{ type: String }]
+  certifications: [{ type: String }],
 });
 
-export default User.discriminator('Teacher', teacherSchema);
+export default User.discriminator("Teacher", teacherSchema);

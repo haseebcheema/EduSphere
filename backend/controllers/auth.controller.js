@@ -4,15 +4,15 @@ import { setAuthCookie } from "../services/cookie.service.js";
 import httpStatus from "../constants/httpStatus.js";
 
 const login = async (req, res) => {
-    const { email, password } = req.body;
-    try {
-      const user = await loginUser(email, password);
-      const token = generateToken(user);
-      setAuthCookie(res, token);
-      res.status(httpStatus.OK).json({ message: 'Login successful!' });
-    } catch (error) {
-      res.status(httpStatus.INTERNAL_SERVER_ERROR).json({ error: error.message });
-    }
+  const { email, password } = req.body;
+  try {
+    const user = await loginUser(email, password);
+    const token = generateToken(user);
+    setAuthCookie(res, token);
+    res.status(httpStatus.OK).json({ message: "Login successful!" });
+  } catch (error) {
+    res.status(httpStatus.INTERNAL_SERVER_ERROR).json({ error: error.message });
+  }
 };
 
 export default login;

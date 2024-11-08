@@ -1,5 +1,4 @@
 export default {
-  
   // informational
   CONTINUE: 100,
   SWITCHING_PROTOCOLS: 101,

@@ -1,7 +1,7 @@
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config();
 
 export default {
-    secret: process.env.JWT_SECRET,
-    expiresIn: "30m",
+  secret: process.env.JWT_SECRET,
+  expiresIn: "30m",
 };

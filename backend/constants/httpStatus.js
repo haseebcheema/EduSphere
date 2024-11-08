@@ -1,11 +1,11 @@
 export default {
   
-  // 1xx Informational
+  // informational
   CONTINUE: 100,
   SWITCHING_PROTOCOLS: 101,
   PROCESSING: 102,
 
-  // 2xx Success
+  // success
   OK: 200,
   CREATED: 201,
   ACCEPTED: 202,
@@ -17,7 +17,7 @@ export default {
   ALREADY_REPORTED: 208,
   IM_USED: 226,
 
-  // 3xx Redirection
+  // redirection
   MULTIPLE_CHOICES: 300,
   MOVED_PERMANENTLY: 301,
   FOUND: 302,
@@ -27,7 +27,7 @@ export default {
   TEMPORARY_REDIRECT: 307,
   PERMANENT_REDIRECT: 308,
 
-  // 4xx Client Errors
+  // client errors
   BAD_REQUEST: 400,
   UNAUTHORIZED: 401,
   PAYMENT_REQUIRED: 402,
@@ -58,7 +58,7 @@ export default {
   REQUEST_HEADER_FIELDS_TOO_LARGE: 431,
   UNAVAILABLE_FOR_LEGAL_REASONS: 451,
 
-  // 5xx Server Errors
+  // server errors
   INTERNAL_SERVER_ERROR: 500,
   NOT_IMPLEMENTED: 501,
   BAD_GATEWAY: 502,

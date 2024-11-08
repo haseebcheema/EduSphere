@@ -8,6 +8,7 @@ import StudentGroup from './StudentGroup.js';
 import Feedback from './Feedback.js';
 import Notification from './Notification.js';
 import ProfileEditRequest from './ProfileEditRequest.js';
+import Assignment from './Assignment.js';
 
 export {
   User,
@@ -19,5 +20,6 @@ export {
   StudentGroup,
   Feedback,
   Notification,
-  ProfileEditRequest
+  ProfileEditRequest,
+  Assignment
 };

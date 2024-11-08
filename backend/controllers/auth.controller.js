@@ -1,5 +1,5 @@
 import loginUser from "../services/auth.service.js";
-import generateToken from "../services/token.service.js";
+import { generateToken } from "../services/token.service.js";
 import { setAuthCookie } from "../services/cookie.service.js";
 import httpStatus from "../constants/httpStatus.js";
 

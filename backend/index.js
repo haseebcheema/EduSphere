@@ -16,4 +16,4 @@ app.use("/auth", authRoutes);
 
 connectDatabase();
 
-app.listen(PORT, () => console.log("server is running"));
+app.listen(PORT, () => console.log(`server is running on http://localhost:${PORT}`));

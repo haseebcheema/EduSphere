@@ -1,4 +1,4 @@
-import comparePassword from "./password.service.js";
+import { comparePassword } from "./password.service.js";
 import { User } from "../models/index.js";
 
 const loginUser = async (email, password) => {

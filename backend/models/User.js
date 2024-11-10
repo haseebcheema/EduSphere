@@ -18,6 +18,7 @@ const userSchema = new mongoose.Schema(
     notifications: [
       { type: mongoose.Schema.Types.ObjectId, ref: "Notification" },
     ],
+    schools: [{ type: mongoose.Schema.Types.ObjectId, ref: "School" }],
   },
   { discriminatorKey: "role", timestamps: true }
 );
